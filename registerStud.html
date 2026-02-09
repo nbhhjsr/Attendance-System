@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="top-header">
+    <div class="header-content">
+      <p>🖥 WELCOME TO ATTENDANCE SYSTEM 🖥</p>
+      <div class="user-profile">
+        <img src="default-pfp.png" alt="User Profile" class="profile-photo" onclick="location.href='profile.html'">
+        <span class="user-name" id="userFullName">Username</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button onclick="location.href='index.html'">🏠 Home</button>
+
+        <!-- Student Dropdown -->
+      <div class ="dropdown">
+      <button class ="dropbtn">🎓 Student</button>
+      <div class="dropdown-content">
+      <a href="registerStud.html">📑Register</a>
+      <a href="leave.html">📝 Leave Request</a>
+      <a href="record.html">📊 Attendance Record</a>
+    </div>
+  </div>
+  
+    </aside>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+  <section class="class-info-form">
+    <h2>CLASS INFO</h2>
+    <form action="register_class.php" method="POST">
+      <label for="subject_name">Subject</label>
+      <input type="text" name="subject_name" placeholder="Subject" required>
+      <label for="class_name">Class</label>
+      <input type="text" name="class_name" placeholder="Class" required>
+
+      <button type="submit">Register Class</button>
+    </form>
+  </section>
+</main>

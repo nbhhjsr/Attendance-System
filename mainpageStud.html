@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page - Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="top-header">
+    <div class="header-content">
+      <p>🖥 WELCOME TO ATTENDANCE SYSTEM 🖥</p>
+      <div class="user-profile">
+        <img src="default-pfp.png" alt="User Profile" class="profile-photo" onclick="location.href='profile.html'">
+        <span class="user-name" id="userFullName">Username</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button onclick="location.href='mainpageStud.html'">🏠 Home</button>
+
+      <!-- Student Dropdown Box -->
+      <div class="dropdown-box">
+        <div class="dropdown">
+          <button class="dropbtn">🎓 Student</button>
+          <div class="dropdown-content">
+            <a href="registerStud.html">📑 Register</a>
+            <a href="leave.html">📝 Leave Request</a>
+            <a href="record.html">📊 Attendance Record</a>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="homepage">
+        <h1>ATTENDANCE SYSTEM</h1>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="top-header">
+    <div class="header-content">
+      <p>🖥 WELCOME TO ATTENDANCE SYSTEM 🖥</p>
+      <div class="user-profile">
+        <img src="default-pfp.png" alt="User Profile" class="profile-photo" onclick="location.href='profile.html'">
+        <span class="user-name" id="userFullName">Username</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button onclick="location.href='index.html'">🏠 Home</button>
+      <button onclick="location.href='register.html'">＋ Register</button>
+      <button onclick="location.href='login.html'">🔐 Login</button>
+    </aside>
+
+    <!-- Main Content -->
+	<form method="POST" action="login.php">
+    <main class="main-content">
+      <section class="login-form">
+        <h2>LOGIN</h2>
+        <div class="role-select">
+          <label><input type="radio" name="USER_ROLE" value="Lecturer" required> Lecturer</label>
+          <label><input type="radio" name="USER_ROLE" value="Student"> Student</label>
+        </div>
+        
+          <input type="text" name="USER_ID" placeholder="User Id" required>
+		  <input type="password" name="REG_PASS" placeholder="Password" required>
+		  <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
